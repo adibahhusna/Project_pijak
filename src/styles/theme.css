@@ -1,0 +1,114 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --font-size: 16px;
+    --background: #F8FBFF;
+    --foreground: #0A2540;
+    --card: #FFFFFF;
+    --card-foreground: #0A2540;
+    --popover: #FFFFFF;
+    --popover-foreground: #0A2540;
+    --primary: #0A4D68;
+    --primary-foreground: #FFFFFF;
+    --secondary: #088395;
+    --secondary-foreground: #FFFFFF;
+    --muted: #E8F4F8;
+    --muted-foreground: #5A7C8F;
+    --accent: #05BFDB;
+    --accent-foreground: #FFFFFF;
+    --destructive: #d4183d;
+    --destructive-foreground: #ffffff;
+    --border: rgba(8, 131, 149, 0.15);
+    --input: transparent;
+    --input-background: #FFFFFF;
+    --switch-background: #B8D8E3;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+    --ring: #088395;
+    --chart-1: #0A4D68;
+    --chart-2: #088395;
+    --chart-3: #05BFDB;
+    --chart-4: #7ED7C1;
+    --chart-5: #A8E6CF;
+    --radius: 0.75rem;
+    --sidebar: #FFFFFF;
+    --sidebar-foreground: #0A2540;
+    --sidebar-primary: #0A4D68;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #E8F4F8;
+    --sidebar-accent-foreground: #0A4D68;
+    --sidebar-border: rgba(8, 131, 149, 0.15);
+    --sidebar-ring: #088395;
+
+    /* Ocean gradient colors */
+    --ocean-deep: #0A4D68;
+    --ocean-primary: #088395;
+    --ocean-bright: #05BFDB;
+    --ocean-light: #7ED7C1;
+    --ocean-pale: #E8F4F8;
+  }
+
+  .dark {
+    --background: #0b131e;
+    --foreground: #f8fafc;
+    --card: #0f172a;
+    --card-foreground: #f8fafc;
+    --popover: #0f172a;
+    --popover-foreground: #f8fafc;
+    --primary: #f8fafc;
+    --primary-foreground: #0f172a;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fca5a5;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #334155;
+    --chart-1: #38bdf8;
+    --chart-2: #34d399;
+    --chart-3: #fbbf24;
+    --chart-4: #c084fc;
+    --chart-5: #f43f5e;
+    --sidebar: #111827;
+    --sidebar-foreground: #f8fafc;
+    --sidebar-primary: #38bdf8;
+    --sidebar-primary-foreground: #f8fafc;
+    --sidebar-accent: #1e293b;
+    --sidebar-accent-foreground: #f8fafc;
+    --sidebar-border: #1e293b;
+    --sidebar-ring: #334155;
+  }
+}
+
+@layer base {
+  * {
+    /* Menggunakan standar penulisan v3, utility ring diganti manual */
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1, h2, h3, h4, label, button {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
